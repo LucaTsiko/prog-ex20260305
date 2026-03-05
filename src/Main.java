@@ -22,6 +22,9 @@ public class Main {
         // Muestro a los alumnos
         System.out.println("Alumnos registrados: ");
         System.out.println(UAX.mostrarAlumnos());
+
+        // Muestro el número total de alumnos
+        System.out.println("El número total de alumnos es: " + UAX.contarAlumnos());
     }
 
 
