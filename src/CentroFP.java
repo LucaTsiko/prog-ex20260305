@@ -75,7 +75,7 @@ public class CentroFP {
     /**
      * Metodo que muestra a todos los alumnos del array.
      */
-    public void mostrarAlumnos(){
+    public String mostrarAlumnos(){
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < MAX_ALUMNOS; i++) {
             if(alumnos[i] != null){
@@ -83,6 +83,7 @@ public class CentroFP {
                 sb.append("\n");
             }
         }
+        return sb.toString();
     }
 
     /**
