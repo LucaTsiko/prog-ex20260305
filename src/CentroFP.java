@@ -34,5 +34,25 @@ public class CentroFP {
         return alumno;
     }
 
+    /**
+     * Metodo que busca la primera posición libre en el array de alumnos.
+     * @return la primera posición libre en el array, -1 en caso contrario.
+     */
+    private int buscarPrimerHuecoLibre(){
+        int posicion = -1;
+        boolean seguirBuscando = true;
+
+        for (int i = 0; i < MAX_ALUMNOS && seguirBuscando ; i++) {
+            if(alumnos[i] == null){
+                posicion = i;
+                seguirBuscando = false;
+            }
+        }
+        return posicion;
+    }
+
+
+
+
 
 }
