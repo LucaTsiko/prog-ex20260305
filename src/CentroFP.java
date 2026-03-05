@@ -51,6 +51,27 @@ public class CentroFP {
         return posicion;
     }
 
+    /**
+     * Metodo que registra a un Alumno antes comprobando su duplicidad y si hay una posicion libre en el array
+     * @param alumno el alumno que vamos a registrar
+     * @return true si se ha registrado, flase en caso contrario
+     */
+    public boolean registrarAlumno(Alumno alumno){
+        boolean alumnoRegistrado = false;
+        int posicionLibre;
+
+        posicionLibre = buscarPrimerHuecoLibre();
+
+        if(buscarAlumno(alumno.getId()) == null){
+            if(posicionLibre >= 0 ){
+                alumnos[posicionLibre] = alumno;
+                alumnoRegistrado = true;
+            }
+
+        }
+        return alumnoRegistrado;
+    }
+
 
 
 
