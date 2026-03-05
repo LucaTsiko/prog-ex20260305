@@ -85,6 +85,23 @@ public class CentroFP {
         }
     }
 
+    /**
+     * Metodo que cuenta a los alumnos que hay en el array
+     * @return el numero de alumnos que hay en el array
+     */
+    public int contarAlumnos(){
+        int contador = 0;
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+            if(alumnos[i] != null){
+                contador++;
+            }
+        }
+        return contador;
+    }
+
+
+
+
 
 
 
