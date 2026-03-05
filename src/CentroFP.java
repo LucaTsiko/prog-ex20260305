@@ -16,6 +16,23 @@ public class CentroFP {
         alumnos = new Alumno[MAX_ALUMNOS];
     }
 
+    /**
+     * Metodo que busca a un Alumno por su id en el array.
+     * @param id el identificador del alumno
+     * @return el alumno encontrado si coincide su id, nulo en caso contrario
+     */
+    public Alumno buscarAlumno(int id){
+        boolean seguirBuscando = true;
+        Alumno alumno = null;
+
+        for (int i = 0; i < MAX_ALUMNOS && seguirBuscando; i++) {
+            if(alumnos[i].getId() == id){
+                alumno = alumnos[i];
+                seguirBuscando = false;
+            }
+        }
+        return alumno;
+    }
 
 
 }
