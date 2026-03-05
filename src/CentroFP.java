@@ -26,7 +26,7 @@ public class CentroFP {
         Alumno alumno = null;
 
         for (int i = 0; i < MAX_ALUMNOS && seguirBuscando; i++) {
-            if(alumnos[i].getId() == id){
+            if(alumnos[i] != null && alumnos[i].getId() == id){
                 alumno = alumnos[i];
                 seguirBuscando = false;
             }
