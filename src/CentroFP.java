@@ -72,6 +72,18 @@ public class CentroFP {
         return alumnoRegistrado;
     }
 
+    /**
+     * Metodo que muestra a todos los alumnos del array.
+     */
+    public void mostrarAlumnos(){
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+            if(alumnos[i] != null){
+                sb.append(alumnos[i].toString());
+                sb.append("\n");
+            }
+        }
+    }
 
 
 
