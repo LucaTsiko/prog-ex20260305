@@ -52,4 +52,22 @@ public class Alumno {
     public int getEdad() {
         return edad;
     }
+
+    /**
+     * Devuelve una representación textual del Alumno con todos sus atributos.
+     *
+     * @return cadena de texto con la información del Alumno.
+     */
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("Alumno: {");
+
+        sb.append("id= " + id);
+        sb.append(", nombre = " + nombre);
+        sb.append(", titulo FP = "  + tituloFP);
+        sb.append(", edad = " + edad);
+        sb.append("}");
+
+        return sb.toString();
+    }
 }
