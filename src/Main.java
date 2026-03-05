@@ -25,6 +25,14 @@ public class Main {
 
         // Muestro el número total de alumnos
         System.out.println("El número total de alumnos es: " + UAX.contarAlumnos());
+
+        // Busqueda existente
+        System.out.print(" \n Busqueda existente: " );
+        System.out.println(UAX.buscarAlumno(1));
+
+        // Busqueda inexistente
+        System.out.print(" \n Busqueda inexistente: " );
+        System.out.println(UAX.buscarAlumno(4));
     }
 
 
